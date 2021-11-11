@@ -1,16 +1,23 @@
 # DEATH ROW TACO
 
-## R7	Identification of the problem you are trying to solve by building this particular marketplace app.
+Death Row Taco is a unique, fictional two-way marketplace app for buying and selling in-house made Tacos by everyday legends from across Perth, W.A.
 
-## R8	Why is it a problem that needs solving?
+## R7 Identification of the problem you are trying to solve by building this particular marketplace app
 
-## R9	A link (URL) to your deployed app (i.e. website)
+Many residents across Perth, W.A share a passion for Taco's but shop front space prices are rising and available locations within walking distance are almost null. Residents across Perth who are considering starting their own food truck business or a store front can now have an opportunity to join an online community of like-minded individuals who are either buying or selling home made Tacos.
 
-## R10	A link to your GitHub repository (repo).
+- Requires low initial investment for individuals who are interested in a side hussle or who may be considering starting their own food van business.
+- By using Death Row Taco's platform you can save hundreds and thousands on business set-up costs and put all that extra money towards marketing and growing your online business.
+
+## R8 Why is it a problem that needs solving?
+
+## R9 A link (URL) to your deployed app (i.e. website)
+
+## R10 A link to your GitHub repository (repo)
 
 - Ensure the repo is accessible by your Educators
 
-## R11	Description of your marketplace app (website), including:
+## R11 Description of your marketplace app (website), including
 
 - Purpose
 - Functionality / features
@@ -19,7 +26,7 @@
 - Target audience
 - Tech stack (e.g. html, css, deployment platform, etc)
 
-## R12	User stories for your app
+## R12 User stories for your app
 
 **As a potential user or guest:**
 
@@ -59,18 +66,18 @@ I want my purchases to be private and not shared.
 I do not want other users to have access to editing or manipulating my posts/listings.
 I do not want other users to see the items in my checkout cart.
 
-## R13	Wireframes for your app
+## R13 Wireframes for your app
 
-## R14	An ERD for your app
+## R14 An ERD for your app
 
-## R15	Explain the different high-level components (abstractions) in your app
+## R15 Explain the different high-level components (abstractions) in your app
 
-## R16	Detail any third party services that your app will use
+## R16 Detail any third party services that your app will use
 
-## R17	Describe your projects models in terms of the relationships (active record associations) they have with each other
+## R17 Describe your projects models in terms of the relationships (active record associations) they have with each other
 
-## R18	Discuss the database relations to be implemented in your application
+## R18 Discuss the database relations to be implemented in your application
 
-## R19	Provide your database schema design
+## R19 Provide your database schema design
 
-## R20	Describe the way tasks are allocated and tracked in your project
+## R20 Describe the way tasks are allocated and tracked in your project
