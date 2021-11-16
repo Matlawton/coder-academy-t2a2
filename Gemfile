@@ -30,7 +30,6 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # Custom Gems 
 gem 'bootstrap', '~> 4.5.2'
-# gem 'sassc-rails', '>= 2.1.0'
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'devise'
@@ -61,3 +60,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "aws-sdk-s3", "~> 1.104"
