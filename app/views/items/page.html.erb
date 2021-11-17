@@ -1,0 +1,21 @@
+<div class="row">
+    <%# This is how I create my cards to display items for sale %>
+    <%= @products.each do |product| %>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+            <%# I dont need to use this right now %>
+            <%# <img class="card-img-top" src="..." alt="Card image cap"> %>
+            <%= image_tag(product.picture, alt: "image", class: "card-img-top") if product.picture.attached? %>
+            <%# <%= image_tag product.picture, class:"card-img-top" %>
+            <div class="card-body">
+                <h5 class="card-title"><%= product.name %></h5>
+                <p class="card-text menu-description"><%= product.description %></p>
+                <p class="card-text"><%= product.price %></p>
+                <%# I dont need to use this one for now %>
+                <%# <a href="#" class="btn btn-primary">Go somewhere</a> %>
+                <%= link_to "More Info", product_path(product.id), class:"btn btn-primary" %>
+            </div>
+            </div>
+        </div>
+    <% end %>
+</div>
