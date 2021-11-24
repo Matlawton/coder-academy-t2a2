@@ -19,17 +19,69 @@ Many residents across Perth, W.A share a passion for Taco's but shop front space
 
 ## R11 Description of your marketplace app (website), including
 
-- Purpose
-- Functionality / features
-- **Sitemap**
+### Purpose
+
+The purpose of this marketplace app is to allow everyday legends from across Perth, Western Australia to have an opportunity to choose a new path for creating a food market style business. Previously aspiring small business owners in this space would have to fork out thousands of dollars for a store front or a food van and then fork out even more to advertise, market and scale their business and dream. The purpose at Death Row Taco is to allow any and all individuals a platform that allows them to grow and scale their in-house taco making business.
+
+### Functionality / features
+
+For my MVP marketplace app I was able to develop features and site functionality for Death Row Taco which are moulded around our user case stories such that we listened to our customers and we designed an application that allows a user to do the following;
+
+- A user can browse the website as a guest.
+- A user can sign up and gain access to the listings page where they can sell items.
+- A user can access a dashboard to view their account settings and edit them.
+- A user can view, edit and delete a listing if they were the creator of the listing.
+- A user can delete their account and private information related to the account such as username.
+- A user can search for available listings.
+- A user can view a full detailed description, image and condition of each listing item for sale.
+- A user can create a new listing to sell and provide an image thanks to AWS S3 bucket.
+- Death Row Taco provides private and confidential user authentication to protect all users.
+
+### Sitemap
 
 Here is my Sitemap for Death Row Taco.
 
 ![A sitemap preview for my web app](app/assets/images/sitemap.png "A preview of my marketplace app sitemap")
 
-- Screenshots
-- Target audience
-- Tech stack (e.g. html, css, deployment platform, etc)
+### Screenshots
+
+### Target audience
+
+The target audience for my marketplace app are,
+
+- Small Business Owners.
+- Aspiring business owners.
+- Aspiring chefs.
+- Food market chefs.
+- Food critics.
+- Taco enthusiasts.
+- Home cooks.
+- Stay at home parents.
+- Busy workaholics who don't have time to meal prep.
+- Any and all individuals above the age of 16 looking to buy a Taco and make an online purchase.
+- Any and all individuals looking to create and sell Taco's(Registered users must be over the age of 16).
+- Individuals looking for a side hustle or passive income.
+
+### Tech stack 
+
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Ruby on Rails](https://rubyonrails.org/)
+- [Postgresql](https://www.postgresql.org/)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+- [CSS3/SCSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Bootstrap](https://getbootstrap.com/)
+- [Devise](https://github.com/heartcombo/devise)
+- [Git](https://git-scm.com/)
+- [GitHub](https://www.github.com/)
+- [Heroku](https://www.heroku.com/)
+- [AWS S3](https://aws.amazon.com/s3/)
+- [VS Code](https://code.visualstudio.com/)
+- [Canva](https://www.canva.com/) (Design work, presenation)
+- [App.diagram](https://app.diagrams.net/) (ERD, Sitemap)
+- [Balsamiq](https://balsamiq.com/)
+- [Trello/Kanban](https://trello.com/)
+- [Simple Form](https://github.com/heartcombo/simple_form)
+
 
 ## R12 User stories for your app
 
@@ -106,6 +158,54 @@ Here is my Entity Relationship Diagram for Death Row Taco.
 ## R15 Explain the different high-level components (abstractions) in your app
 
 ## R16 Detail any third party services that your app will use
+
+- [Bootstrap](https://getbootstrap.com/)
+
+I used *Bootstrap* to style my HTML and CSS components together for a beautiful looking web based application that is responsive and stylish.
+
+- [Devise](https://github.com/heartcombo/devise)
+
+*Devise* is a Ruby gem for creating user authentication. I implemented Devise into my project to help facilitate and manage user authentication for new users looking to sig up and have their personal information stored on the database.
+
+- [Git](https://git-scm.com/)
+
+*Git* is a largely adopted and ever so popular source control tool that allows an individual to manage their projects timeline history and much more to control your project and the team building it. I implimented Git into my project as a way to save, track and facilitate my timeline and versions at each step of progress within my project.
+
+- [GitHub](https://www.github.com/)
+
+*GitHub* is one of the largest providers of Internet and web based hosting for software development teams and version control implimentations using Git. It provides source code management functionality for all members of the repository or project team. I utlized GitHub and continuously pushed my local repository to GitHub whenever I made siginificant achievements in the progress of my application.
+
+- [Heroku](https://www.heroku.com/)
+
+*Heroku* is a free to use cloud based platform that lets an individual build, deploy, monitor and scale their applications. I chose to use Heroku to deploy my application because I believe this is a very easy to use platform with a large support and knowledge base community behind it, making it easy for me to troubleshoot any issues that arose during my deployment.
+
+- [AWS S3](https://aws.amazon.com/s3/)
+
+*AWS* is a free to register cloud storage system/platform, but does come with some charges in cases where an end user has exceeded the free bandwidth limit allocated. S3 is one of the services by AWS and the term stands for "Simple Storage Service". This product offers instant scalability for individuals and business and also provides a high level of security. I chose to use and AWS S3 bucket for my project to allow an individual to be able to upload an image and have the image stored in my bucket for web viewing by another user who may be looking to purchase the item listed. As an individual starts to create their listing, they will be prompted to upload an image of their listing which is then sent to my AWS S3 bucket to be stored and called upon when needed.
+
+- [VS Code](https://code.visualstudio.com/)
+
+Owned by [Microsoft](https://www.microsoft.com/en-au/), *Visual Studo Code* is the most popular and flexible code editing software with a massive support network for troubleshooting or connecting a user to thousands of helpful extensions. 
+
+- [Canva](https://www.canva.com/)
+
+*Canva* is an Australian founded online design and publishing tool, one of the first of it's kind to offer such tools and design templates to many people all around the world. I chose to use Canva for my logos, design work and to fabricate my slide deck presentation.
+
+- [App.diagram](https://app.diagrams.net/)
+
+*App.diagrams* is a free to use online design tool where users can create many types of tables, forms, maps, diagrams and much more either from scratch or by utilizing one of their hudreds of templates. I used App.diagram to fabricate my Sitemap and my Entity Relationship Diagram.
+
+- [Balsamiq](https://balsamiq.com/)
+
+*Balsamiq* is a for-profit design building software application that allows anybody with no prior experience in design work to successfully execute well thoughtout and professional wireframe mock ups for aspiring web develiopment and software development projects. I used Balsamiq with a keygen supplied by Coder Academy to facilitate the creation of my wireframe mock ups which allowed me to formulate a basic idea of the design layout for my marketplace app.
+
+- [Trello/Kanban](https://trello.com/)
+
+*Trello* is a very popular web-based, Kanban-style, list-making, web-based application service which is free to use for new members and is developed by a subsidiary of Atlassian known as Trello Enterprise. I used Trello and a kanban style board to facilitate the progression and management of my project, through careful consideration of tasks, goals, sprints and marks of achievement I was able to successfully manage, build and execute my project.
+
+- [Simple Form](https://github.com/heartcombo/simple_form)
+
+*Simple form* is like a mini library of pre constructed forms that an individual or team can utilise to quickly initate entire form creation scaffold and use within a project. I used Simple form to help me develop my forms such as login, sign up and list(sell) an item.
 
 ## R17 Describe your projects models in terms of the relationships (active record associations) they have with each other
 
