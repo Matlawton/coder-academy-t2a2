@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'items/page'
   resources :products
   devise_for :users
   root 'home#page'
