@@ -21,7 +21,12 @@ Many residents across Perth, W.A share a passion for Taco's but shop front space
 
 - Purpose
 - Functionality / features
-- Sitemap
+- **Sitemap**
+
+Here is my Sitemap for Death Row Taco.
+
+![A sitemap preview for my web app](app/assets/images/sitemap.png "A preview of my marketplace app sitemap")
+
 - Screenshots
 - Target audience
 - Tech stack (e.g. html, css, deployment platform, etc)
@@ -93,6 +98,10 @@ Here is my "About Us" page Desktop, Mobile(iphone) and Tablet wireframes.
 ![About Us Page Wireframe preview](app/assets/images/Marketplace_Wireframes/About.png "A preview of wireframes for the About us page")
 
 ## R14 An ERD for your app
+
+Here is my Entity Relationship Diagram for Death Row Taco.
+
+![An ERD preview for my app](app/assets/images/dtr-erd.png "A preview of an ERD I created for my marketplace app")
 
 ## R15 Explain the different high-level components (abstractions) in your app
 
