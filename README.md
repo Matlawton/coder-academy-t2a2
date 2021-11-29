@@ -1,22 +1,27 @@
-# DEATH ROW TACO
+# Welcome to DEATH ROW TACO
 
-Death Row Taco is a unique, fictional two-way marketplace app for buying and selling in-house made Tacos by everyday legends from across Perth, W.A.
+This is an assignment for Coder Academy - T1A3 - by Mathew Lawton.
+
+![Presentation of Purchases](app/assets/images/drt-banner.png "A screenshot of my purchases table")
+
+**Death Row Taco** is a unique, fictional two-way marketplace app for buying and selling in-house made Tacos by everyday legends from across Perth, W.A.
 
 ## R7 Identification of the problem you are trying to solve by building this particular marketplace app
 
-"The  issue  of  food  insecurity  in  Australia  has  never  been  more  prominent  than  it is  right  now. The global  pandemic  has  put a  spotlight on  the  crisis  that  for  too long  has  flown  under society’s  radar" - [The FoodBank Hunger Report 2021](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=https%3A%2F%2Freports.foodbank.org.au%2Fwp-content%2Fuploads%2Fdocuments%2F2021-Foodbank-Hunger-Report-PDF.pdf&clen=986257&chunk=true)
+"The  issue  of  food  insecurity  in  Australia  has  never  been  more  prominent  than  it is  right  now. The global  pandemic  has  put a  spotlight on  the  crisis  that  for  too long  has  flown  under society’s  radar" - [The FoodBank Hunger Report 2021](https://reports.foodbank.org.au/wp-content/uploads/documents/2021-Foodbank-Hunger-Report-PDF.pdf)
 
-[The FoodBank Hunger Report 2021](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=https%3A%2F%2Freports.foodbank.org.au%2Fwp-content%2Fuploads%2Fdocuments%2F2021-Foodbank-Hunger-Report-PDF.pdf&clen=986257&chunk=true) implies that many everyday legends across Australia are going hungry and we know for a fact that many locals in Perth, W.A share a passion for Taco's, and not just any Taco, but Tacos made by locals, for the locals. But access to affordable, currently registered food vans and shop front space such as restuarants are scarce, almost null. Residents across Perth who are considering starting their own food truck business or a restuarant can now have an opportunity to join an online community of like-minded individuals who are either buying or selling home made Tacos, to grow, market and scale their in-house small business, break boundaries and demistify the home made Taco reselling industry.
+[The FoodBank Hunger Report 2021](https://reports.foodbank.org.au/wp-content/uploads/documents/2021-Foodbank-Hunger-Report-PDF.pdf) implies that many everyday legends across Australia are going hungry and we know for a fact that many locals in Perth, W.A share a passion for Taco's, and not just any Taco, but Tacos made by locals, for the locals. But access to affordable, currently registered food vans and shop front space such as restuarants are scarce, almost null. Residents across Perth who are considering starting their own food truck business or a restuarant can now have an opportunity to join an online community of like-minded individuals who are either buying or selling home made Tacos, to grow, market and scale their in-house small business, break boundaries and demistify the home made Taco reselling industry.
 
 ## R8 Why is it a problem that needs solving?
 
-filling a gap in the market.
-feeding hungry people.
-helping small business.
-helping unemployed people with skills in cookery.
-giving people jobs.
-giving people a purpose.
+I believe this is a problem that not only needs to be addressed but needs a solution for many reasons, here are just a few that we came up with in order to plan, draft, create and fabricate an MVP for Death Row Taco.
 
+- Filling a gap in the market. People want this, people need this but there is nothing currently that allows this.
+- Feeding hungry people. According to the report mentioned above, this needs to happen, now!
+- Helping small business to launch, grow and scale. Use our platform and like weeds we will grow together!
+- Helping unemployed people with skills in cookery find new opportunities.
+- Giving people jobs or allowing them to create a side hustle to prosper.
+- Providing people with opportunities that allow them to grow and prosper.
 
 ## Advantages of the Death Row Taco platform
 
@@ -227,7 +232,7 @@ Owned by [Microsoft](https://www.microsoft.com/en-au/), *Visual Studo Code* is t
 
 ## R17 Describe your projects models in terms of the relationships (active record associations) they have with each other
 
-Relating to the MVP submitted, below you can see my Product model, this model allows me to create the belongs_to relationship to my Users model by using `belongs_to :user` which means for each product listed, there must be one user. This model also has a relationship to the active record such that each product listed must have one picture attached to the listing by using the command `has_one_attached :picture`
+Relating to the MVP submitted, below you can see my Product model, this model allows me to create the belongs_to relationship to my Users model by using `belongs_to :user` which means for each product listed, there must be one user. This model also has a relationship to the active record such that each product listed must have one picture attached to the listing by using the command `has_one_attached :picture`. To create and execute this has_one attached :picture function I used Amazon Web Services, S3 Bucket.
 
                 class Product < ApplicationRecord
                     validates :name, presence: true, length: { minimum: 2 }
@@ -324,3 +329,8 @@ Above is a screenshot of my *Purchases* table from my database, this database mo
                 end
 
 ## R20 Describe the way tasks are allocated and tracked in your project
+
+To allocate, track and execute tasks and manage the development of my project I chose to use Trello, with a kanban template. After creating my basic structure I installed some power-ups such as Card Priority which allowed me to track and set deadline due dates for each task and card. I chose to use Canva for my design work in the Trello board.
+
+Below are some screen shots of how my Trello board was optimized at different stages throughout the development of my app.
+
