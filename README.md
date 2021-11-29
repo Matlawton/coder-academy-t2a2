@@ -2,7 +2,7 @@
 
 This is an assignment for Coder Academy - T1A3 - by Mathew Lawton.
 
-![Presentation of Purchases](app/assets/images/drt-banner.png "A screenshot of my purchases table")
+![Welcome to DRT Image](app/assets/images/drt-banner.png "A screenshot of my header/navbar for the marketplace")
 
 **Death Row Taco** is a unique, fictional two-way marketplace app for buying and selling in-house made Tacos by everyday legends from across Perth, W.A.
 
@@ -330,7 +330,14 @@ Above is a screenshot of my *Purchases* table from my database, this database mo
 
 ## R20 Describe the way tasks are allocated and tracked in your project
 
-To allocate, track and execute tasks and manage the development of my project I chose to use Trello, with a kanban template. After creating my basic structure I installed some power-ups such as Card Priority which allowed me to track and set deadline due dates for each task and card. I chose to use Canva for my design work in the Trello board.
+To allocate, track and execute tasks and manage the development of my project I chose to use Trello, with a kanban template. After creating my basic structure I installed some power-ups such as Card Priority which allowed me to track the urgency and set deadline due dates for each task and card. I chose to use Canva for my design work in the Trello board.
 
 Below are some screen shots of how my Trello board was optimized at different stages throughout the development of my app.
 
+![Presentation of Trello Board](app/assets/images/trello-board1.png "A screenshot of my Trello Board progression")
+
+![Presentation of Trello Board](app/assets/images/trello-board2.png "A screenshot of my Trello Board progression")
+
+![Presentation of Trello Board](app/assets/images/trello-board3.png "A screenshot of my Trello Board progression")
+
+![Presentation of Trello Board](app/assets/images/trello-board4.png "A screenshot of my Trello Board progression")
