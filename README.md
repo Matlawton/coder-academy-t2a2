@@ -227,15 +227,100 @@ Owned by [Microsoft](https://www.microsoft.com/en-au/), *Visual Studo Code* is t
 
 ## R17 Describe your projects models in terms of the relationships (active record associations) they have with each other
 
+Relating to the MVP submitted, below you can see my Product model, this model allows me to create the belongs_to relationship to my Users model by using `belongs_to :user` which means for each product listed, there must be one user. This model also has a relationship to the active record such that each product listed must have one picture attached to the listing by using the command `has_one_attached :picture`
+
                 class Product < ApplicationRecord
-                validates :name, presence: true, length: { minimum: 2 }
-                validates :description, presence: true, length: { maximum: 250 }
-                belongs_to :user
-                has_one_attached :picture
+                    validates :name, presence: true, length: { minimum: 2 }
+                    validates :description, presence: true, length: { maximum: 250 }
+                    belongs_to :user
+                    has_one_attached :picture
+                end
+
+Below is another example of how I implemented active storage relationships, this time you can see my User model which is created to handle the functionality and logic between a user and their relationships to Products which you can see by the command `has_many :products`. This means that each user can have many products and as mentioned above, each product must have one user.
+
+                class User < ApplicationRecord
+                    devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable
+                    has_many :products
+                    validates :condition, presence: true, length: { minimum: 2 }
                 end
 
 ## R18 Discuss the database relations to be implemented in your application
 
+![Presentation of Users](app/assets/images/users.png "A screenshot of my users table")
+
+Above is a screenshot of my *Users* table from my database, you can see that the relationships I have with this table are being executed by the use a Primary Key where "user_id" is being used as a foreign key in other tables, such as products and purchases.
+
+![Presentation of Products](app/assets/images/products.png "A screenshot of my products table")
+
+Above is a screenshot of my *Products* table from my database, you can see that the relationships I have with this table are being executed by the use a Primary Key where "product_id" is being used as a foreign key in other tables, such as purchases. Here you can also see the relationships from other corresponding tables by noticing the use of Foreign keys such as user_id and condition_id.
+
+![Presentation of Condition](app/assets/images/conditions.png "A screenshot of my conditions table")
+
+Above is a screenshot of my *Condition* table from my database, this database model was not created for the launch of my MVP and will be implimented at a later stage. You can see that the relationships I have with this table are being executed by the use a Primary Key where condition_id is being used as a foreign key in other tables, such as purchases.
+
+![Presentation of Purchases](app/assets/images/purchases.png "A screenshot of my purchases table")
+
+Above is a screenshot of my *Purchases* table from my database, this database model was not created for the launch of my MVP and will be implimented at a later stage. You can see that the relationships I have with this table are being executed by the use a Primary Key where purchase_id is being used. You can also see here the relationships by corresponding tables by the use of foreign keys such as products_id and user_id.
+
 ## R19 Provide your database schema design
+
+                ActiveRecord::Schema.define(version: 2021_11_19_044759) do
+                enable_extension "plpgsql"
+
+                create_table "active_storage_attachments", force: :cascade do |t|
+                    t.string "name", null: false
+                    t.string "record_type", null: false
+                    t.bigint "record_id", null: false
+                    t.bigint "blob_id", null: false
+                    t.datetime "created_at", null: false
+                    t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
+                    t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
+                end
+
+                create_table "active_storage_blobs", force: :cascade do |t|
+                    t.string "key", null: false
+                    t.string "filename", null: false
+                    t.string "content_type"
+                    t.text "metadata"
+                    t.string "service_name", null: false
+                    t.bigint "byte_size", null: false
+                    t.string "checksum", null: false
+                    t.datetime "created_at", null: false
+                    t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+                end
+
+                create_table "active_storage_variant_records", force: :cascade do |t|
+                    t.bigint "blob_id", null: false
+                    t.string "variation_digest", null: false
+                    t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+                end
+
+                create_table "products", force: :cascade do |t|
+                    t.string "name"
+                    t.text "description"
+                    t.float "price"
+                    t.bigint "user_id", null: false
+                    t.datetime "created_at", precision: 6, null: false
+                    t.datetime "updated_at", precision: 6, null: false
+                    t.index ["user_id"], name: "index_products_on_user_id"
+                end
+
+                create_table "users", force: :cascade do |t|
+                    t.string "email", default: "", null: false
+                    t.string "encrypted_password", default: "", null: false
+                    t.string "reset_password_token"
+                    t.datetime "reset_password_sent_at"
+                    t.datetime "remember_created_at"
+                    t.datetime "created_at", precision: 6, null: false
+                    t.datetime "updated_at", precision: 6, null: false
+                    t.string "username"
+                    t.index ["email"], name: "index_users_on_email", unique: true
+                    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+                end
+
+                add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+                add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+                add_foreign_key "products", "users"
+                end
 
 ## R20 Describe the way tasks are allocated and tracked in your project
