@@ -4,12 +4,24 @@ Death Row Taco is a unique, fictional two-way marketplace app for buying and sel
 
 ## R7 Identification of the problem you are trying to solve by building this particular marketplace app
 
-Many residents across Perth, W.A share a passion for Taco's but shop front space prices are rising and available locations within walking distance are almost null. Residents across Perth who are considering starting their own food truck business or a store front can now have an opportunity to join an online community of like-minded individuals who are either buying or selling home made Tacos.
+"The  issue  of  food  insecurity  in  Australia  has  never  been  more  prominent  than  it is  right  now. The global  pandemic  has  put a  spotlight on  the  crisis  that  for  too long  has  flown  under society’s  radar" - [The FoodBank Hunger Report 2021](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=https%3A%2F%2Freports.foodbank.org.au%2Fwp-content%2Fuploads%2Fdocuments%2F2021-Foodbank-Hunger-Report-PDF.pdf&clen=986257&chunk=true)
+
+[The FoodBank Hunger Report 2021](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=https%3A%2F%2Freports.foodbank.org.au%2Fwp-content%2Fuploads%2Fdocuments%2F2021-Foodbank-Hunger-Report-PDF.pdf&clen=986257&chunk=true) implies that many everyday legends across Australia are going hungry and we know for a fact that many locals in Perth, W.A share a passion for Taco's, and not just any Taco, but Tacos made by locals, for the locals. But access to affordable, currently registered food vans and shop front space such as restuarants are scarce, almost null. Residents across Perth who are considering starting their own food truck business or a restuarant can now have an opportunity to join an online community of like-minded individuals who are either buying or selling home made Tacos, to grow, market and scale their in-house small business, break boundaries and demistify the home made Taco reselling industry.
+
+## R8 Why is it a problem that needs solving?
+
+filling a gap in the market.
+feeding hungry people.
+helping small business.
+helping unemployed people with skills in cookery.
+giving people jobs.
+giving people a purpose.
+
+
+## Advantages of the Death Row Taco platform
 
 - Requires low initial investment for individuals who are interested in a side hussle or who may be considering starting their own food van business.
 - By using Death Row Taco's platform you can save hundreds and thousands on business set-up costs and put all that extra money towards marketing and growing your online business.
-
-## R8 Why is it a problem that needs solving?
 
 ## R9 A link (URL) to your deployed app (i.e. website)
 
@@ -62,13 +74,14 @@ The target audience for my marketplace app are,
 - Any and all individuals looking to create and sell Taco's(Registered users must be over the age of 16).
 - Individuals looking for a side hustle or passive income.
 
-### Tech stack 
+### Tech stack
 
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Ruby on Rails](https://rubyonrails.org/)
 - [Postgresql](https://www.postgresql.org/)
 - [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
 - [CSS3/SCSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://www.javascript.com/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Devise](https://github.com/heartcombo/devise)
 - [Git](https://git-scm.com/)
@@ -82,8 +95,7 @@ The target audience for my marketplace app are,
 - [Trello/Kanban](https://trello.com/)
 - [Simple Form](https://github.com/heartcombo/simple_form)
 
-
-## R12 User stories for your app
+### R12 User stories for your app
 
 **As a potential user or guest:**
 
@@ -157,15 +169,21 @@ Here is my Entity Relationship Diagram for Death Row Taco.
 
 ## R15 Explain the different high-level components (abstractions) in your app
 
+The focalpoint and foundation for the Death Row Taco marketplace app is fabricated using the Ruby on Rails framework which utilises the Model-View-Controller architecture. Using and following this type of architecture when building my app allowed me to break up my apps functionality and logic into three unique layers. The Models, the views and the controller which links everything together. The view is the layer that an individual or end user directly interacts with via a brower or IoT device. The view layer has been created so that there isn't much logic being passed around by the model layer, this is handled almost exclusively by the controller layer. The controller layer is the man in the middle whom collates the info provded by the model and lets the view know how to display such info to the end user.
+
+In the Death Row Taco marketplace app, our controller layers play a crucial role in facilitating our requests(routes) and manages the data or info passed onto the next layer such as a model or view. For example, if an end user would like to list a new taco for sale, sign-up and create a profile or something as simple as clicking a button, the app will send a request to the controller to execute this command from the end user and process the incoming route accordingly. An example if this would be if an end user would like to return to the home page from a sub page, the controller will handle this request by routing the input from the end user(click of a button) to the requested page, then it will process the data from the model and send the view back to the end user, which will be the home page.
+
+Our model layers maintain the communications and relationship between our PostgreSQL database and operations for creating, reading, updating and deleting(CRUD Functionality) data that is stored in our database. For example if an end user has previously made a listing to sell a taco, our model would have engrained all the details about this listing into our database which can be recalled upong at any time to be viewed, updated, manipulated or destroyed. This is all done by our model layer. For the release of the Death Row Taco marketplace app, we currently have a products model that handles the CRUD functionality and authorisation on forms for our end users, we also have a users model which handles the CRUD functionality for user profiles and handles authorisation and authentication when signing up, logging in and creating an item to list. An example of how this is being used in our app is that if an already registered user decided to create a new item to list for sale, the model will execute a validation check on the given forms to make sure either no form is left blank or the minimum requirements supplied to the model are met, such as a minimum character count or a float to be supploed in the form field.
+
 ## R16 Detail any third party services that your app will use
 
 - [Bootstrap](https://getbootstrap.com/)
 
-I used *Bootstrap* to style my HTML and CSS components together for a beautiful looking web based application that is responsive and stylish.
+I used *Bootstrap* to style my HTML and CSS components together for a beautiful looking web based application that is responsive and stylish. I used Bootstrap for my Navbar.
 
 - [Devise](https://github.com/heartcombo/devise)
 
-*Devise* is a Ruby gem for creating user authentication. I implemented Devise into my project to help facilitate and manage user authentication for new users looking to sig up and have their personal information stored on the database.
+*Devise* is a Ruby gem for creating user authentication. I implemented Devise into my project to help facilitate and manage user authentication for new users looking to sign up and have their personal information stored on the database.
 
 - [Git](https://git-scm.com/)
 
@@ -185,7 +203,7 @@ I used *Bootstrap* to style my HTML and CSS components together for a beautiful 
 
 - [VS Code](https://code.visualstudio.com/)
 
-Owned by [Microsoft](https://www.microsoft.com/en-au/), *Visual Studo Code* is the most popular and flexible code editing software with a massive support network for troubleshooting or connecting a user to thousands of helpful extensions. 
+Owned by [Microsoft](https://www.microsoft.com/en-au/), *Visual Studo Code* is the most popular and flexible code editing software with a massive support network for troubleshooting or connecting a user to thousands of helpful extensions.
 
 - [Canva](https://www.canva.com/)
 
@@ -193,7 +211,7 @@ Owned by [Microsoft](https://www.microsoft.com/en-au/), *Visual Studo Code* is t
 
 - [App.diagram](https://app.diagrams.net/)
 
-*App.diagrams* is a free to use online design tool where users can create many types of tables, forms, maps, diagrams and much more either from scratch or by utilizing one of their hudreds of templates. I used App.diagram to fabricate my Sitemap and my Entity Relationship Diagram.
+*App.diagrams* is a free to use online design tool where users can create many types of tables, forms, maps, diagrams and much more either from scratch or by utilizing one of their hundreds of templates. I used App.diagram to fabricate my Sitemap and my Entity Relationship Diagram.
 
 - [Balsamiq](https://balsamiq.com/)
 
@@ -208,6 +226,8 @@ Owned by [Microsoft](https://www.microsoft.com/en-au/), *Visual Studo Code* is t
 *Simple form* is like a mini library of pre constructed forms that an individual or team can utilise to quickly initate entire form creation scaffold and use within a project. I used Simple form to help me develop my forms such as login, sign up and list(sell) an item.
 
 ## R17 Describe your projects models in terms of the relationships (active record associations) they have with each other
+
+
 
 ## R18 Discuss the database relations to be implemented in your application
 
