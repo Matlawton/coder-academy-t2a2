@@ -227,7 +227,12 @@ Owned by [Microsoft](https://www.microsoft.com/en-au/), *Visual Studo Code* is t
 
 ## R17 Describe your projects models in terms of the relationships (active record associations) they have with each other
 
-
+`class Product < ApplicationRecord
+  validates :name, presence: true, length: { minimum: 2 }
+  validates :description, presence: true, length: { maximum: 250 }
+  belongs_to :user
+  has_one_attached :picture
+end`
 
 ## R18 Discuss the database relations to be implemented in your application
 
