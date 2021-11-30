@@ -14,7 +14,7 @@ This is an assignment for Coder Academy - T1A3 - by Mathew Lawton.
 
 ## R8 Why is it a problem that needs solving?
 
-I believe this is a problem that not only needs to be addressed but needs a solution for many reasons, here are just a few that we came up with in order to plan, draft, create and fabricate an MVP for Death Row Taco.
+I believe this is a problem that not only needs to be addressed but needs a solution for many reasons, here are just a few that I came up with in order to plan, draft, create and fabricate an MVP for Death Row Taco.
 
 - Filling a gap in the market. People want this, people need this but there is nothing currently that allows this.
 - Feeding hungry people. According to the report mentioned above, this needs to happen, now!
@@ -23,7 +23,7 @@ I believe this is a problem that not only needs to be addressed but needs a solu
 - Giving people jobs or allowing them to create a side hustle to prosper.
 - Providing people with opportunities that allow them to grow and prosper.
 
-## Advantages of the Death Row Taco platform
+### With the above taken into consideration, what are some of the avantages of the Death Row Taco platform?
 
 - Requires low initial investment for individuals who are interested in a side hussle or who may be considering starting their own food van business.
 - By using Death Row Taco's platform you can save hundreds and thousands on business set-up costs and put all that extra money towards marketing and growing your online business.
@@ -329,6 +329,8 @@ Above is a screenshot of my *Purchases* table from my database, this database mo
                 end
 
 ## R20 Describe the way tasks are allocated and tracked in your project
+
+[Please click here to view my public Trello Board.](https://trello.com/b/FBzr4GXw/deathrowtaco)
 
 To allocate, track and execute tasks and manage the development of my project I chose to use Trello, with a kanban template. After creating my basic structure I installed some power-ups such as Card Priority which allowed me to track the urgency and set deadline due dates for each task and card. I chose to use Canva for my design work in the Trello board.
 
