@@ -6,6 +6,24 @@ This is an assignment for Coder Academy - T1A3 - by Mathew Lawton.
 
 **Death Row Taco** is a unique, fictional two-way marketplace app for buying and selling in-house made Tacos by everyday legends from across Perth, W.A.
 
+## R9 A link (URL) to your deployed app (i.e. website)
+
+- Link to my deployed website on the Heroku platform - <https://murmuring-anchorage-81585.herokuapp.com/>
+
+## R10 A link to your GitHub repository (repo)
+
+- Link to my GitHub Repository - <https://github.com/Matlawton/coder-academy-t2a2>
+
+### Screenshots
+
+![Screen shot of deployed website](app/assets/images/screenshots/ss-v2.png "A screenshot of my deployed marketplace app")
+
+![Screen shot of deployed website](app/assets/images/screenshots/ss-v1.png "A screenshot of my deployed marketplace app")
+
+![Screen shot of deployed website](app/assets/images/screenshots/ss-v3.png "A screenshot of my deployed marketplace app")
+
+![Screen shot of deployed website](app/assets/images/screenshots/ss-v4.png "A screenshot of my deployed marketplace app")
+
 ## R7 Identification of the problem you are trying to solve by building this particular marketplace app
 
 "The  issue  of  food  insecurity  in  Australia  has  never  been  more  prominent  than  it is  right  now. The global  pandemic  has  put a  spotlight on  the  crisis  that  for  too long  has  flown  under society’s  radar" - [The FoodBank Hunger Report 2021](https://reports.foodbank.org.au/wp-content/uploads/documents/2021-Foodbank-Hunger-Report-PDF.pdf)
@@ -27,14 +45,6 @@ I believe this is a problem that not only needs to be addressed but needs a solu
 
 - Requires low initial investment for individuals who are interested in a side hussle or who may be considering starting their own food van business.
 - By using Death Row Taco's platform you can save hundreds and thousands on business set-up costs and put all that extra money towards marketing and growing your online business.
-
-## R9 A link (URL) to your deployed app (i.e. website)
-
-- Link to my deployed website on the Heroku platform - <https://murmuring-anchorage-81585.herokuapp.com/>
-
-## R10 A link to your GitHub repository (repo)
-
-- Link to my GitHub Repository - <https://github.com/Matlawton/coder-academy-t2a2>
 
 ## R11 Description of your marketplace app (website), including
 
@@ -61,8 +71,6 @@ For my MVP marketplace app I was able to develop features and site functionality
 Here is my Sitemap for Death Row Taco.
 
 ![A sitemap preview for my web app](app/assets/images/sitemap.png "A preview of my marketplace app sitemap")
-
-### Screenshots
 
 ### Target audience
 
